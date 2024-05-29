@@ -22,13 +22,40 @@
             width: 100%;
             text-align: center;
         }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            width: 100%;
+            max-width: 1200px;
+            margin: 2rem 0;
+            position: relative;
+        }
+        .gallery-left, .gallery-right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            height: auto;
+        }
+        .gallery-left {
+            margin-right: 1rem;
+        }
+        .gallery-right {
+            margin-left: 1rem;
+        }
+        .gallery-left img, .gallery-right img {
+            width: 200px; /* Defina a largura desejada para as imagens */
+            height: auto;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
         main {
-            max-width: 800px;
             background: white;
             padding: 2rem;
-            margin: 2rem 0;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1;
         }
         footer {
             background-color: #333;
@@ -38,6 +65,7 @@
             width: 100%;
             position: fixed;
             bottom: 0;
+            z-index: 2;
         }
         .button {
             background-color: #4CAF50;
@@ -59,30 +87,38 @@
 </head>
 <body>
     <header>
-        <h1>Bem-vindo à página do cristiano de cuecas</h1>
+        <h1>Bem-vindo à página do Cristiano de Cuecas</h1>
     </header>
-    <main>
-        <section>
-            <h2>Sobre Cristiano de cuecas</h2>
-            <p>Olá! Sou um desenvolvedor web apaixonado pelo cristiano de cuecas</p>
-        </section>
-        <section>
-            <h2>Cristiano de cuecass</h2>
-            <ul>
-                <li>Cristiano de cuecas 1</li>
-                <li>Cristiano de cuecas 2</li>
-                <li>Cristiano de cuecas 3</li>
-            </ul>
-        </section>
-        <button class="button" onclick="showAlert()">Cristiano de cuecas</button>
-    </main>
+    <div class="container">
+        <div class="gallery-left">
+            <img src="Imagens/Cristiano.jpg.png" alt="Cristiano de cuecas esquerda">
+        </div>
+        <main>
+            <section>
+                <h2>Sobre Cristiano de Cuecas</h2>
+                <p>Olá! Sou um desenvolvedor web apaixonado pelo Cristiano de Cuecas.</p>
+            </section>
+            <section>
+                <h2>Cristiano de Cuecas</h2>
+                <ul>
+                    <li>Cristiano de Cuecas 1</li>
+                    <li>Cristiano de Cuecas 2</li>
+                    <li>Cristiano de Cuecas 3</li>
+                </ul>
+            </section>
+            <button class="button" onclick="redirectToBackgroundPage()">Cristiano de Cuecas</button>
+        </main>
+        <div class="gallery-right">
+            <img src="Imagens/Cristiano.jpg.png" alt="Cristiano de cuecas direita">
+        </div>
+    </div>
     <footer>
-        <p>&copy; Cristiano de cuecas</p>
+        <p>&copy; Cristiano de Cuecas</p>
     </footer>
 
     <script>
-        function showAlert() {
-            alert("Olá! Cristiano de cuecas.");
+        function redirectToBackgroundPage() {
+            window.location.href = 'background.html';
         }
     </script>
 </body>
