@@ -1,1 +1,89 @@
-<div>Hello</div>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cristiano de cuecas</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+            width: 100%;
+            text-align: center;
+        }
+        main {
+            max-width: 800px;
+            background: white;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo à página do cristiano de cuecas</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Sobre Cristiano de cuecas</h2>
+            <p>Olá! Sou um desenvolvedor web apaixonado pelo cristiano de cuecas</p>
+        </section>
+        <section>
+            <h2>Cristiano de cuecass</h2>
+            <ul>
+                <li>Cristiano de cuecas 1</li>
+                <li>Cristiano de cuecas 2</li>
+                <li>Cristiano de cuecas 3</li>
+            </ul>
+        </section>
+        <button class="button" onclick="showAlert()">Cristiano de cuecas</button>
+    </main>
+    <footer>
+        <p>&copy; Cristiano de cuecas</p>
+    </footer>
+
+    <script>
+        function showAlert() {
+            alert("Olá! Cristiano de cuecas.");
+        }
+    </script>
+</body>
+</html>
